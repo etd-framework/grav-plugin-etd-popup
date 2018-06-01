@@ -1,0 +1,28 @@
+window.addEventListener("load", function() {
+    {% if config.plugins.etd-popup.title or config.plugins.etd-popup.message or config.plugins.etd-popup.image %}
+    iziToast.show({
+        overlay: 1,
+        overlayClose: 1,
+        overlayColor: "rgba(0, 0, 0, 0.6)",
+        timeout: 0,
+        layout: 2,
+        close: 1,
+        closeOnEscape: 1,
+        {% if config.plugins.etd-popup.image %}
+        image: "{{ config.plugins.etd-popup.image }}",
+        {% endif %}
+        {% if config.plugins.etd-popup.link %}
+        onOpened: function() {
+            jQuery(".iziToast").on("click", function(e) {
+                if ($(e.target).is(".iziToast-close"))
+                    return;
+                window.open("{{ config.plugins.etd-popup.link }}")
+            });
+        },
+        {% endif %}
+        message: "{{ config.plugins.etd-popup.message ?: '' }}",
+        title: "{{ config.plugins.etd-popup.title ?: '' }}",
+        position: "{{ config.plugins.etd-popup.position ?: 'bottomRight' }}"
+    });
+    {% endif %}
+});

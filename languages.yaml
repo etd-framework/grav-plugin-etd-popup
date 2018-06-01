@@ -1,0 +1,33 @@
+fr:
+  PLUGINS:
+    ETD_POPUP:
+      FIELDS:
+        ENABLED:
+          LABEL: Statut
+          HELP: Statut du plug-in.
+          OPTIONS:
+            DISABLED: Désactivé
+            ENABLED: Activé
+        IMAGE:
+          LABEL: Image
+          HELP: Image de fond.
+        LINK:
+          LABEL: Lien
+          HELP: Lien de redirection de la popup.
+        MESSAGE:
+          LABEL: Message
+          HELP: Message de la popup.
+        POSITION:
+          LABEL: Position
+          HELP: Position de la popup par rapport à la fenêtre.
+          OPTIONS:
+            BOTTOMCENTER: En bas au centre
+            BOTTOMLEFT: En bas à gauche
+            BOTTOMRIGHT: En bas à droite
+            CENTER: Au centre
+            TOPCENTER: En haut au centre
+            TOPLEFT: En haut à gauche
+            TOPRIGHT: En haut à droite
+        TITLE:
+          LABEL: Titre
+          HELP: Titre de la popup.
