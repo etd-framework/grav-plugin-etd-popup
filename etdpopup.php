@@ -8,7 +8,7 @@ use RocketTheme\Toolbox\Event\Event;
  * Class EtdPopupPlugin
  * @package Grav\Plugin
  */
-class EtdPopupPlugin extends Plugin
+class EtdpopupPlugin extends Plugin
 {
     /**
      * @return array
@@ -59,12 +59,10 @@ class EtdPopupPlugin extends Plugin
     {
         $twig = $this->grav['twig'];
 
-        $config = $this->config->toArray();
-
         $this->grav['assets']->addCss("https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.2.0/css/iziToast.min.css");
         $this->grav['assets']->addJs("https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.2.0/js/iziToast.min.js");
 
-        $this->grav['assets']->addInlineCss('.iziToast-cover{width:100% !important;z-index:-1;background-size:contain !important}');
-        $this->grav['assets']->addInlineJs($twig->twig->render('partials/etd-popup.html.twig', array('config' => $config)));
+        $this->grav['assets']->addInlineCss('.iziToast-cover{width:100% !important;z-index:-1;background-size:contain !important}.iziToast-capsule{max-width:600px;}.iziToast>.iziToast-body .iziToast-message{font-size: 16px;line-height: 24px;}');
+        $this->grav['assets']->addInlineJs($twig->twig->render('partials/etdpopup.html.twig', array('config' => $this->config->toArray())));
     }
 }

@@ -12,17 +12,17 @@ Installing the Etd Popup plugin can be done in one of two ways. The GPM (Grav Pa
 
 The simplest way to install this plugin is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's terminal (also called the command line).  From the root of your Grav install type:
 
-    bin/gpm install etd-popup
+    bin/gpm install etdpopup
 
-This will install the Etd Popup plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/etd-popup`.
+This will install the Etd Popup plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/etdpopup`.
 
 ### Manual Installation
 
-To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `etd-popup`. You can find these files on [GitHub](https://github.com/etd-framework/grav-plugin-etd-popup) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
+To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `etdpopup`. You can find these files on [GitHub](https://github.com/etd-framework/grav-plugin-etdpopup) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
 
 You should now have all the plugin files under
 
-    /your/site/grav/user/plugins/etd-popup
+    /your/site/grav/user/plugins/etdpopup
 	
 > NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Error](https://github.com/getgrav/grav-plugin-error) and [Problems](https://github.com/getgrav/grav-plugin-problems) to operate.
 
@@ -32,7 +32,7 @@ If you use the admin plugin, you can install directly through the admin plugin b
 
 ## Configuration
 
-Before configuring this plugin, you should copy the `user/plugins/etd-popup/etd-popup.yaml` to `user/config/plugins/etd-popup.yaml` and only edit that copy.
+Before configuring this plugin, you should copy the `user/plugins/etdpopup/etdpopup.yaml` to `user/config/plugins/etdpopup.yaml` and only edit that copy.
 
 Here is the default configuration and an explanation of available options:
 
@@ -40,7 +40,7 @@ Here is the default configuration and an explanation of available options:
 enabled: true
 ```
 
-Note that if you use the admin plugin, a file with your configuration, and named etd-popup.yaml will be saved in the `user/config/plugins/` folder once the configuration is saved in the admin.
+Note that if you use the admin plugin, a file with your configuration, and named etdpopup.yaml will be saved in the `user/config/plugins/` folder once the configuration is saved in the admin.
 
 ## Usage
 

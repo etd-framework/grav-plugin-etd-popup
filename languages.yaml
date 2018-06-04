@@ -1,6 +1,6 @@
 fr:
   PLUGINS:
-    ETD_POPUP:
+    ETDPOPUP:
       FIELDS:
         ENABLED:
           LABEL: Statut

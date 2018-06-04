@@ -5,11 +5,11 @@ icon: plug
 author:
   name: ETD Solutions
   email: dev@etd-solutions.com
-homepage: https://github.com/etd-framework/grav-plugin-etd-popup
-demo: https://github.com/etd-framework/grav-plugin-etd-popup
+homepage: https://github.com/etd-framework/grav-plugin-etdpopup
+demo: https://github.com/etd-framework/grav-plugin-etdpopup
 keywords: grav, plugin, popup
-bugs: https://github.com/etd-framework/grav-plugin-etd-popup/issues
-docs: https://github.com/etd-framework/grav-plugin-etd-popup/blob/develop/README.md
+bugs: https://github.com/etd-framework/grav-plugin-etdpopup/issues
+docs: https://github.com/etd-framework/grav-plugin-etdpopup/blob/develop/README.md
 license: MIT
 
 form:
@@ -17,51 +17,51 @@ form:
   fields:
     enabled:
       type: toggle
-      label: PLUGINS.ETD_POPUP.FIELDS.ENABLED.LABEL
-      help: PLUGINS.ETD_POPUP.FIELDS.ENABLED.HELP
+      label: PLUGINS.ETDPOPUP.FIELDS.ENABLED.LABEL
+      help: PLUGINS.ETDPOPUP.FIELDS.ENABLED.HELP
       highlight: 1
       default: 0
       options:
-        1: PLUGINS.ETD_POPUP.FIELDS.ENABLED.OPTIONS.ENABLED
-        0: PLUGINS.ETD_POPUP.FIELDS.ENABLED.OPTIONS.DISABLED
+        1: PLUGINS.ETDPOPUP.FIELDS.ENABLED.OPTIONS.ENABLED
+        0: PLUGINS.ETDPOPUP.FIELDS.ENABLED.OPTIONS.DISABLED
       validate:
         type: bool
     title:
       type: text
-      label: PLUGINS.ETD_POPUP.FIELDS.TITLE.LABEL
-      help: PLUGINS.ETD_POPUP.FIELDS.TITLE.HELP
+      label: PLUGINS.ETDPOPUP.FIELDS.TITLE.LABEL
+      help: PLUGINS.ETDPOPUP.FIELDS.TITLE.HELP
       validate:
         type: text
     message:
       type: editor
-      label: PLUGINS.ETD_POPUP.FIELDS.MESSAGE.LABEL
-      help: PLUGINS.ETD_POPUP.FIELDS.MESSAGE.HELP
+      label: PLUGINS.ETDPOPUP.FIELDS.MESSAGE.LABEL
+      help: PLUGINS.ETDPOPUP.FIELDS.MESSAGE.HELP
       validate:
         type: textarea
     position:
       type: select
-      label: PLUGINS.ETD_POPUP.FIELDS.POSITION.LABEL
-      help: PLUGINS.ETD_POPUP.FIELDS.POSITION.HELP
+      label: PLUGINS.ETDPOPUP.FIELDS.POSITION.LABEL
+      help: PLUGINS.ETDPOPUP.FIELDS.POSITION.HELP
       classes: fancy
       default: 'bottomRight'
       options:
-        'bottomRight': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.BOTTOMRIGHT
-        'bottomLeft': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.BOTTOMLEFT
-        'topRight': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.TOPRIGHT
-        'topLeft': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.TOPLEFT
-        'bottomCenter': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.BOTTOMCENTER
-        'topCenter': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.TOPCENTER
-        'center': PLUGINS.ETD_POPUP.FIELDS.POSITION.OPTIONS.CENTER
+        'bottomRight': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.BOTTOMRIGHT
+        'bottomLeft': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.BOTTOMLEFT
+        'topRight': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.TOPRIGHT
+        'topLeft': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.TOPLEFT
+        'bottomCenter': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.BOTTOMCENTER
+        'topCenter': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.TOPCENTER
+        'center': PLUGINS.ETDPOPUP.FIELDS.POSITION.OPTIONS.CENTER
     image:
       type: file
-      label: PLUGINS.ETD_POPUP.FIELDS.IMAGE.LABEL
-      help: PLUGINS.ETD_POPUP.FIELDS.IMAGE.HELP
-      destination: 'user/plugins/etd-popup/assets/images'
+      label: PLUGINS.ETDPOPUP.FIELDS.IMAGE.LABEL
+      help: PLUGINS.ETDPOPUP.FIELDS.IMAGE.HELP
+      destination: 'user/plugins/etdpopup/assets/images'
       accept:
         - image/*
     link:
       type: text
-      label: PLUGINS.ETD_POPUP.FIELDS.LINK.LABEL
-      help: PLUGINS.ETD_POPUP.FIELDS.LINK.HELP
+      label: PLUGINS.ETDPOPUP.FIELDS.LINK.LABEL
+      help: PLUGINS.ETDPOPUP.FIELDS.LINK.HELP
       validate:
         type: url
